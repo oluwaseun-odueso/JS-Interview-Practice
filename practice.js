@@ -48,19 +48,23 @@
 //     return newSortedArray.sort()
 // }
 
-function swapNumb(a, b){
-    // console.log("a: " + a + " and b: " + b);
-    a = a ^ b;
-    b = a ^ b;
-    a = a ^ b;
+// function swapNumb(a, b){
+//     // console.log("a: " + a + " and b: " + b);
+//     a = a ^ b;
+//     b = a ^ b;
+//     a = a ^ b;
 
-    // OR
+//     // OR
 
-    // b = b - a
-    // a = a + b
-    // b = a - b
+//     // b = b - a
+//     // a = a + b
+//     // b = a - b
 
-    console.log("a: " + a + " and b: " + b);
-  }
+//     console.log("a: " + a + " and b: " + b);
+//   }
 
-swapNumb(5, 4)
+function reverseString(str) {
+    return str.split("").reverse().join("")
+}
+
+console.log(reverseString("hello world hello Nigeria"))
