@@ -7,15 +7,14 @@
 //     return true
 // }
 
-function findPrimeFactors(number) {
-    var primeFactors = []
-    for (let i = 2; number > 2; i++) {
-        if (number % i == 0) {
-            primeFactors.push(i)
-            number = number / i
-        }
+function nthFibonacciNumber(n) {
+    var fibo = [1, 1]
+
+    if (n <= 2) return 1
+    for (let i = 2; i <= n; i++) {
+        fibo[i] = fibo[i-1] + fibo[i-2]
     }
-    return primeFactors
+    return fibo[n]
 }
 
-console.log(findPrimeFactors(20))
+console.log(nthFibonacciNumber(12))
