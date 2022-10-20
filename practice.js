@@ -27,14 +27,40 @@
 //     return divisor
 // }
 
-function removeDuplicateMembersFromArray(arr) {
-    const newArray = []
-    for (let i = 0; i < arr.length; i++) {
-        if ( ! (arr[i] in newArray)) {
-            newArray.push(arr[i])
-        }
-    }
-    return newArray
-}
+// function removeDuplicateMembersFromArray(arr) {
+//     const newArray = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if ( ! (arr[i] in newArray)) {
+//             newArray.push(arr[i])
+//         }
+//     }
+//     return newArray
+// }
 
-console.log(removeDuplicateMembersFromArray([1, '2', 3, 5, 3, 7, '2', 1, 4, 10, 4]))
+// function mergeTwoSortedArray(arr1, arr2) {
+//     const newSortedArray = [] 
+//     for(let i = 0; i < arr1.length; i++) {
+//         newSortedArray.push(arr1[i])
+//     }
+//     for(let i = 0; i < arr2.length; i++) {
+//         newSortedArray.push(arr2[i])
+//     }
+//     return newSortedArray.sort()
+// }
+
+function swapNumb(a, b){
+    // console.log("a: " + a + " and b: " + b);
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+    // OR
+
+    // b = b - a
+    // a = a + b
+    // b = a - b
+
+    console.log("a: " + a + " and b: " + b);
+  }
+
+swapNumb(5, 4)
