@@ -17,14 +17,24 @@
 //     return fibo[n]
 // }
 
-function greatestCommonDivisor(m, n) {
-    var divisor = 0
-    for (let i = 1; i <= m || i <= n ; i++) {
-        if (m % i == 0 && n % i == 0) {
-            divisor = i
+// function greatestCommonDivisor(m, n) {
+//     var divisor = 0
+//     for (let i = 1; i <= m || i <= n ; i++) {
+//         if (m % i == 0 && n % i == 0) {
+//             divisor = i
+//         }
+//     }
+//     return divisor
+// }
+
+function removeDuplicateMembersFromArray(arr) {
+    const newArray = []
+    for (let i = 0; i < arr.length; i++) {
+        if ( ! (arr[i] in newArray)) {
+            newArray.push(arr[i])
         }
     }
-    return divisor
+    return newArray
 }
 
-console.log(greatestCommonDivisor(69, 169))
+console.log(removeDuplicateMembersFromArray([1, '2', 3, 5, 3, 7, '2', 1, 4, 10, 4]))
