@@ -67,8 +67,12 @@
 //     return str.split("").reverse().join("")
 // }
 
-function reversWordsInSentence(str) {
-    return str.split(" ").reverse().join(" ")
+// function reversWordsInSentence(str) {
+//     return str.split(" ").reverse().join(" ")
+// }
+
+function reverseWordsInPlace(str) {
+    return str.split(" ").reverse().join(" ").split("").reverse().join("")
 }
 
-console.log(reversWordsInSentence("the name of the girl is"))
+console.log(reverseWordsInPlace("I am a girl"))
