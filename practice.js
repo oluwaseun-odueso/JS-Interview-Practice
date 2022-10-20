@@ -63,8 +63,12 @@
 //     console.log("a: " + a + " and b: " + b);
 //   }
 
-function reverseString(str) {
-    return str.split("").reverse().join("")
+// function reverseString(str) {
+//     return str.split("").reverse().join("")
+// }
+
+function reversWordsInSentence(str) {
+    return str.split(" ").reverse().join(" ")
 }
 
-console.log(reverseString("hello world hello Nigeria"))
+console.log(reversWordsInSentence("the name of the girl is"))
